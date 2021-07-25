@@ -1,0 +1,39 @@
+.markdown__preview {
+  width: 40vw;
+  height: 90vh;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.markdown__preview_area {
+  height: 100%;
+  overflow: scroll;
+  font-size: 20px;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: solid 1px black;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+td,th
+{
+    padding:5px;
+    border:1px solid ;
+}
+blockquote {
+    border-left: 4px solid rgb(196, 194, 194);
+    padding-left:12px;
+  }
+  @media screen and (max-width:769px) {
+    .markdown__preview
+    {
+        width:90vw;
+        height:40vh;
+    }
+}
